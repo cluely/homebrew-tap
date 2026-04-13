@@ -5,20 +5,20 @@
 class Cluely < Formula
   desc "CLI for the Cluely platform"
   homepage "https://cluely.com"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cluely/cluely-cli/releases/download/v0.1.3/cluely_0.1.3_darwin_amd64.tar.gz"
-      sha256 "4cc8bd12ad2f34b9a04a9d1ef30e13463f3af5e9f3095674750a14666c2df5a6"
+      url "https://github.com/cluely/cluely-cli/releases/download/v0.2.0/cluely_0.2.0_darwin_amd64.tar.gz"
+      sha256 "0f6fb3797cebbac3d587035cc5607dcc9b49004e652a9cf4d7d2308c69d60fa1"
 
       define_method(:install) do
         bin.install "cluely"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cluely/cluely-cli/releases/download/v0.1.3/cluely_0.1.3_darwin_arm64.tar.gz"
-      sha256 "114adbc2cf8b4c022fd9f86a619508e047ac9663ffbf4c185129ea49b70c1ff6"
+      url "https://github.com/cluely/cluely-cli/releases/download/v0.2.0/cluely_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6cae8b23b330c87de8f8b3f04e879bfd99cf7d930076c2229f808f066ad8e937"
 
       define_method(:install) do
         bin.install "cluely"
@@ -28,15 +28,15 @@ class Cluely < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cluely/cluely-cli/releases/download/v0.1.3/cluely_0.1.3_linux_amd64.tar.gz"
-      sha256 "4d520f5ce6643450fc86f6d388681b7ab6a0126f8adb2e4c655973e7988f3228"
+      url "https://github.com/cluely/cluely-cli/releases/download/v0.2.0/cluely_0.2.0_linux_amd64.tar.gz"
+      sha256 "66755ff1739963384ff09589cd7f30e0c9587429d3e2272d13a5e273bd1bae8a"
       define_method(:install) do
         bin.install "cluely"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cluely/cluely-cli/releases/download/v0.1.3/cluely_0.1.3_linux_arm64.tar.gz"
-      sha256 "93d9be0d2df692c6f0d58f04bb974f676adce77705b4fd7171df23423003a35c"
+      url "https://github.com/cluely/cluely-cli/releases/download/v0.2.0/cluely_0.2.0_linux_arm64.tar.gz"
+      sha256 "d28a830fa008fa3b678cef55396120e42d7b5328be22daa3c68413806a9100f8"
       define_method(:install) do
         bin.install "cluely"
       end
